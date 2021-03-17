@@ -1,0 +1,14 @@
+#id{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.btn{
+  border-radius: 50%;
+  position: fixed;
+  bottom: 26px;
+  right: 39px;
+  z-index: 98;
+  padding: 21px;
+  background-color: #ef8172;
+}
