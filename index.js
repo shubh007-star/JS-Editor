@@ -10,6 +10,9 @@ var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
   smartIndent: true,
   matchBrackets: true,
   closebrackets: true,
+  autoCloseBrackets: true,
+  showCursorWhenSelecting: true,
+  tabSize: 2,
 });
 editor.setSize("1366", "600");
 
