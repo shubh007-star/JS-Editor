@@ -12,7 +12,7 @@ var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
   closebrackets: true,
   autoCloseBrackets: true,
   showCursorWhenSelecting: true,
-  tabSize: 2,
+  keyMap: "sublime",
 });
 editor.setSize("1366", "600");
 
