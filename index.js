@@ -14,7 +14,7 @@ var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
   showCursorWhenSelecting: true,
   keyMap: "sublime",
 });
-editor.setSize("1366", "600");
+editor.setSize("100%", "100%");
 
 
 // Override default console functions for our custom Dev Console
