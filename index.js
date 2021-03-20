@@ -18,8 +18,17 @@ var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
   autoCloseBrackets: true,
   showCursorWhenSelecting: true,
 
-  //Autocomplete
-  extraKeys: { "Ctrl-Space": "autocomplete" },
+  //Autocomplete and Full-Screen Mode Keybindings
+  extraKeys: {
+    "Ctrl-Space": "autocomplete",
+    F11: function (cm) {
+      cm.setOption("fullScreen", !cm.getOption("fullScreen"));
+    },
+    Esc: function (cm) {
+      if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);
+    },
+  },
+  
   mode: { name: "javascript", globalVars: true },
 });
 editor.setSize("100%", "100%");
