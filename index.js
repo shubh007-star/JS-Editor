@@ -13,11 +13,11 @@ var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
   autoCloseBrackets: true,
   showCursorWhenSelecting: true,
   keyMap: "sublime",
-  
-  //For autocomplete more, more code at the bottom 
+
+  //For autocomplete more, more code at the bottom
   extraKeys: {"Ctrl-Space": "autocomplete"},
   mode: {name: "javascript", globalVars: true},
-  
+
 });
 editor.setSize("100%", "100%");
 
@@ -142,3 +142,27 @@ if (typeof Promise !== "undefined") {
     hintOptions: {hint: synonyms}
   })
 }
+
+// experiment
+var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+  lineNumbers: true,
+  styleActiveLine: true,
+  matchBrackets: true
+});
+var input = document.getElementById("select");
+function selectTheme() {
+  var theme = input.options[input.selectedIndex].textContent;
+  editor.setOption("theme", theme);
+  location.hash = "#" + theme;
+}
+var choice = (location.hash && location.hash.slice(1)) ||
+             (document.location.search &&
+              decodeURIComponent(document.location.search.slice(1)));
+if (choice) {
+  input.value = choice;
+  editor.setOption("theme", choice);
+}
+CodeMirror.on(window, "hashchange", function() {
+  var theme = location.hash.slice(1);
+  if (theme) { input.value = theme; selectTheme(); }
+});
