@@ -56,18 +56,26 @@ nav {
 nav>span {
   display: block;
 }
-/* try */
+
+/* Popup */
 .heading-popup{
   text-align: center;
   font-weight: bold;
 }
+
 #heading-bold-non{
   font-weight: normal;
 }
+
 .middle-heading{
   padding-left: 30px;
   padding-right: 30px;
 }
+
 #temp{
   padding-top: 15px;
+}
+
+.popup-span{
+  font-size: 14px;
 }
