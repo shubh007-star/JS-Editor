@@ -170,7 +170,77 @@
         </select>
       </p>
 
-      <div class="btn btn-warning" action>EXECUTE</div>
+      <div class="button-demo">
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter">
+          HELP
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title popup-btn-demo" id="exampleModalCenterTitle">Keyboard Shortcut for Editor</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="modal-body">
+                  <table class="shortcutTable" border="1px solid #dfe2e5">
+                    <thead>
+                      <tr class="heading-popup">
+                        <th align="center">Action</th>
+                        <th align="center">Windows/Linux</th>
+                        <th align="center">Mac</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Run Program</td>
+                        <td>Ctrl-Enter</td>
+                        <td>Command-Enter</td>
+                      </tr>
+                      <tr>
+                        <td>Find</td>
+                        <td>Ctrl-F</td>
+                        <td>Command-F</td>
+                      </tr>
+                      <tr>
+                        <td>Replace</td>
+                        <td>Ctrl-H</td>
+                        <td>Command-Option-F</td>
+                      </tr>
+                      <tr>
+                        <td>Remove line</td>
+                        <td>Ctrl-D</td>
+                        <td>Command-D</td>
+                      </tr>
+                      <tr>
+                        <td>Move lines down</td>
+                        <td>Alt-Down</td>
+                        <td>Option-Down</td>
+                      </tr>
+                      <tr>
+                        <td>Move lines up</td>
+                        <td>Alt-UP</td>
+                        <td>Option-Up</td>
+                      </tr>
+                    </tbody>
+                  </table><br>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Execute Section -->
+        <div class="btn btn-warning" action>EXECUTE</div>
+      </div>
     </nav>
     <!-- Codemirror textarea-->
     <textarea id="editor">Insert code here...</textarea>
