@@ -40,3 +40,12 @@ nav {
 nav>span {
   display: block;
 }
+/* try */
+.heading-popup{
+  text-align: center;
+  font-weight: bold;
+}
+.middle-heading{
+  padding-left: 30px;
+  padding-right: 30px;
+}
