@@ -45,6 +45,9 @@ nav>span {
   text-align: center;
   font-weight: bold;
 }
+#heading-bold-non{
+  font-weight: normal;
+}
 .middle-heading{
   padding-left: 30px;
   padding-right: 30px;
