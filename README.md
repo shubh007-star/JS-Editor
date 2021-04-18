@@ -12,5 +12,5 @@ Online JavaScript Editor - Write and run your JavaScript code here.
 
 ## Link
 
-[Lorem Ipsum](https://pip.pypa.io/en/stable/)
+[JavaScript Editor Online](https://shubh007-star.github.io/JS-Editor/)
 
