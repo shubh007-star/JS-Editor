@@ -14,6 +14,3 @@ Online JavaScript Editor - Write and run your JavaScript code here.
 
 [Lorem Ipsum](https://pip.pypa.io/en/stable/)
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
-
